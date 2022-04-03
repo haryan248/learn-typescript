@@ -27,9 +27,11 @@ var user = {};
 /**
  * @returns {Promise<User>}
  */
+
 function fetchUser() {
     return axios.get(url);
 }
+
 fetchUser().then(function (response) {
     response.address.city;
 });
